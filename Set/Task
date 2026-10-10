@@ -1,0 +1,6 @@
+Employee
+ id
+ name
+ salary
+
+ Remove employee based on one characteristics

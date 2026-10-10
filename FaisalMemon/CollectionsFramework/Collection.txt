@@ -1,0 +1,10 @@
+The Collection Framework in Java is a set of classes and interfaces used to store, manipulate, and process groups
+of objects efficiently.
+
+At runtime, collections are data-structure implementations with contracts.
+
+Java Collections are built on three core ideas:
+Abstraction → interfaces (List, Set, Queue, Map)
+Behavior guarantees → ordering, uniqueness, sorting, thread-safety
+Performance trade-offs → time + memory
+A collection is not just storage — it’s a promise about how data behaves.

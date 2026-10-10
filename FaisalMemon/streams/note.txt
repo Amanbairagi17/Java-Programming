@@ -1,0 +1,22 @@
+A functional interface in Java is an interface that contains exactly one abstract method.
+This single abstract method is the core of its functionality, and it's also referred to as a Single Abstract Method (SAM) interface.
+While it can have only one abstract method, a functional interface can also include multiple default and static methods,
+as well as methods inherited from the Object class.
+
+A Functional Interface in Java is an interface that has exactly one abstract method.
+It can have:
+Only one abstract method (the core functional method)
+Any number of default or static methods.
+Methods from Object (like toString(), equals(), etc.)
+
+Key Points:
+A Functional Interface has exactly one abstract method.
+Use @FunctionalInterface to clearly indicate and enforce it.
+Enables lambda expressions and method references in Java.
+Can have multiple default, static, and private methods (from Java 9+).
+Interface methods are public and abstract by default.
+Sometimes called a SAM interface because of its single abstract method.
+Only abstract methods matter for functional interface validation.
+Many built-in functional interfaces are in java.util.function.
+Runnable, Callable, Comparator, Predicate, Consumer, Function.
+Java 8 (as part of functional programming and Stream API).

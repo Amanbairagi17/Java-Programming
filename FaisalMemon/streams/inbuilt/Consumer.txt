@@ -1,0 +1,13 @@
+The Consumer<T> interface is an inbuilt functional interface in Java (java.util.function) that accepts a
+single input and performs an operation on it but does not return any result.
+
+@FunctionalInterface
+public interface Consumer<T> {
+    void accept(T t);
+}
+
+T → Type of input
+Returns nothing (void)
+
+Use Consumer when you want to perform an action with an input, such as printing, updating, or processing a value,
+ without returning anything.

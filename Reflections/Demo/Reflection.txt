@@ -1,0 +1,18 @@
+Reflection in Java is the ability of a program to examine and modify its own structure and behavior at runtime. It provides programmatic
+ access to information about loaded classes, interfaces, fields, methods, and constructors, allowing for dynamic manipulation of code
+ that might not be known at compile time.
+
+
+Core Concepts & Classes
+The core classes for reflection are found in the java.lang.reflect package, along with java.lang.Class.
+Some key classes include Class (the entry point for reflection), Constructor, Method, and Field, which provide access to specific
+parts of a class or interface. Modifier and Array classes are also available for working with modifiers and arrays dynamically.
+
+Key Uses
+While powerful, reflection is typically used by frameworks and tools rather than in general application logic. Common use cases include:
+Frameworks: Libraries like Spring and Hibernate utilize reflection for tasks such as dependency injection and ORM.
+Testing and Debugging: Tools like debuggers and testing frameworks employ reflection to inspect objects and execute specific methods.
+Dynamic Loading and Serialization: Reflection enables loading classes dynamically at runtime and is used by libraries for object serialization (e.g., JSON or XML mapping).
+Advantages and Disadvantages
+Reflection offers the advantage of enabling dynamic runtime inspection and manipulation, allowing applications to work with classes unknown at compile time. It is also useful for generic programming and developing advanced libraries.
+However, there are downsides. Reflection can introduce performance overhead, violate encapsulation by accessing private members, and make code harder to debug and potentially less portable.

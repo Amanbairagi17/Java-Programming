@@ -1,0 +1,28 @@
+Predicate<T>
+Purpose: Tests a condition on a single input, returns boolean
+Definition:
+@FunctionalInterface
+public interface Predicate<T> {
+    boolean test(T t);
+}
+Chaining: and(), or(), negate()
+
+
+BiPredicate<T, U>
+Purpose: Tests a condition on two inputs, returns boolean
+Definition:
+@FunctionalInterface
+public interface BiPredicate<T, U> {
+    boolean test(T t, U u);
+}
+Chaining: and(), or(), negate()
+
+
+Supplier<T>
+Purpose: Provides a result of type T, no input
+Definition:
+@FunctionalInterface
+public interface Supplier<T> {
+    T get();
+}
+Use Case: Lazy value generation, object creation, or default values.

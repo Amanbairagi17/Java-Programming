@@ -1,0 +1,58 @@
+✅ Checked Exceptions
+Checked at compile-time.
+The compiler forces you to handle them using try-catch or throws.
+Represent recoverable conditions (you can take action to handle them).
+IOException
+SQLException
+FileNotFoundException
+ClassNotFoundException
+
+try {
+    FileReader file = new FileReader("data.txt");
+} catch (FileNotFoundException e) {
+    e.printStackTrace();
+}
+
+
+❌ Unchecked Exceptions
+Not checked at compile-time — occur during runtime.
+Subclasses of RuntimeException.
+Represent programming errors (e.g., invalid logic or data).
+Examples:
+NullPointerException
+ArrayIndexOutOfBoundsException
+ArithmeticException
+NumberFormatException
+int x = 10 / 0;  // ArithmeticException at runtime
+The compiler won’t complain, but it crashes at runtime.
+
+
+Summary Table
+Type	     Checked	                            Unchecked
+Checked at	 Compile-time	                        Runtime
+Must handle	 Yes                                	No
+Base class	 Exception (except RuntimeException)  	RuntimeException
+Examples	 IOException, SQLException	            NullPointerException, ArithmeticException
+
+FINALLY, BLOCK :
+In Java, the finally block is used along with try-catch to execute code regardless of whether an exception occurs or not.
+ It's typically used for resource cleanup, like closing files, database connections, or streams.
+✅ Key Points:
+Always executed: Whether an exception is thrown or not.
+Optional: You can have a try block with finally without catch.
+Used for cleanup: Releasing resources that must happen no matter what.
+Execution order: try → catch (if exception) → finally.
+
+
+throw: A Java keyword used inside a method to actually throw an exception object to the runtime.
+Example: throw new IOException("File not found");
+
+throws: A Java keyword used in a method declaration to specify the exceptions that the method might throw, informing the caller to handle them.
+Example: void readFile() throws IOException { ... }
+
+
+A custom exception in Java is a user-defined exception class created to handle specific
+application-level errors that are not covered by standard Java exceptions.
+Key points:
+It extends Exception (checked) or RuntimeException (unchecked).
+Allows you to provide meaningful error messages and special handling for your application's logic.

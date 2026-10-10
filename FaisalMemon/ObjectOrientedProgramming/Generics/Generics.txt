@@ -1,0 +1,25 @@
+Generics allow you to write type-safe, reusable code by using type parameters (like <T>) instead of specific data types.
+Before generics, Java used Object → runtime errors.
+Generics move errors to compile time.
+
+
+without generic
+ArrayList list = new ArrayList();
+list.add(10);
+list.add("Hello");
+int x = (int) list.get(1); // Runtime error
+
+
+with generic :
+ArrayList<Integer> list = new ArrayList<>();
+list.add(10);
+// list.add("Hello"); ❌ compile-time error
+int x = list.get(0); // safe
+✔ Type safety
+✔ No casting
+✔ Better readability
+
+class Box<T> {
+    T value;
+}
+

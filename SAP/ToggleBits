@@ -1,0 +1,20 @@
+Jopesh is learning de usually tries to solve unit assignment problems before the lecture .
+Today he got one tricky question.
+The problem statement is "A positive integer has been given as an input".
+Convert decimal value to binary representation.
+Toggle all bits of ot after the most significant bit including the most significant bit.
+Print the positive integer value after toggle all value
+
+
+Questions DP variations of LCS
+Edit minimum distance
+Longest Palindromic Subsequence
+Shortest Common Subsequence -- Find the shortest string that has both s1 and s2 subsequences. Length = Len(s1) + len(s2) - lcs(s1,s2)
+Longest Repeating Subsequence
+Sequence Pattern Matching
+What is the basic difference between data hiding and data binding and abstraction
+Number of Equals Substrings
+Minimum Insertions to make Palindrome
+
+
+

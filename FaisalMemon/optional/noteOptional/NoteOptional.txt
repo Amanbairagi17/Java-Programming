@@ -1,0 +1,47 @@
+In Java, **`Optional`** is a **container class** introduced in **Java 8** (in `java.util` package) that may or may not hold a
+**non-null value**.
+
+It’s mainly used to **avoid `NullPointerException`** and make code more **readable and safe** when dealing with potentially null values.
+
+
+✅ Basic Idea
+Instead of returning `null`, a method can return an `Optional<T>` object.
+
+Example:
+Optional<String> name = Optional.ofNullable(getName());
+
+### 🧩 Common Methods
+
+| Method                 | Description                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------- |
+| `of(value)`            | Creates an Optional with a non-null value. Throws `NullPointerException` if null. |
+| `ofNullable(value)`    | Creates an Optional that may hold a null value.                                   |
+| `empty()`              | Returns an empty Optional.                                                        |
+| `isPresent()`          | Returns `true` if a value is present.                                             |
+| `ifPresent(Consumer)`  | Executes the given code if a value is present.                                    |
+| `get()`                | Returns the value if present, else throws `NoSuchElementException`.               |
+| `orElse(defaultValue)` | Returns value if present, else default value.                                     |
+| `orElseGet(Supplier)`  | Like `orElse()`, but lazily evaluated.                                            |
+| `orElseThrow()`        | Throws an exception if no value is present.                                       |
+
+
+### 💡 Example
+Optional<String> name = Optional.ofNullable(null);
+
+System.out.println(name.isPresent());       // false
+System.out.println(name.orElse("Unknown")); // prints "Unknown"
+
+### 🔍 Use Case
+
+Without Optional:
+
+String name = getName();
+if (name != null) {
+    System.out.println(name.toUpperCase());
+}
+
+With Optional:
+Optional.ofNullable(getName())
+        .ifPresent(n -> System.out.println(n.toUpperCase()));
+
+

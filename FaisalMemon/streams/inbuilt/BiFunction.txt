@@ -1,0 +1,14 @@
+The BiFunction<T, U, R> interface is an inbuilt functional interface in Java (java.util.function) that represents a
+function taking two arguments and producing a result.
+
+@FunctionalInterface
+public interface BiFunction<T, U, R> {
+    R apply(T t, U u);
+}
+
+T → Type of first input
+U → Type of second input
+R → Return type
+
+Use BiFunction when you want to process two inputs together and return a result.
+Performing operation like addition , subtraction, multiplication and string concatenation

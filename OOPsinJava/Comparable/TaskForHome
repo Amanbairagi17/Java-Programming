@@ -1,0 +1,9 @@
+Batsman ->
+    name // alphabetically
+    country // descending and ascending
+    strike rate // both
+    centuries //
+    age
+    matches
+    run rate
+    avg

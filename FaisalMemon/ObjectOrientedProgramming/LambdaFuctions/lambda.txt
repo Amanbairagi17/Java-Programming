@@ -1,0 +1,12 @@
+A lambda function in Java is an anonymous function (no name) used to implement a functional interface in a short and clear way.
+(parameters) -> { body }
+(a, b) -> a + b
+
+🔹 Built-in Functional Interfaces (Very Important)
+Interface	        Method	    Use
+Runnable	        run()	    Thread
+Comparator<T>	    compare()	Sorting
+Predicate<T>	    test()	    true/false
+Function<T,R>	    apply()	    transform
+Consumer<T>	        accept()	no return
+Supplier<T>	        get()	    no input

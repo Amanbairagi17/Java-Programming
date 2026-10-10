@@ -1,0 +1,7 @@
+In Java Collections Framework, the List interface is part of java.util and represents an ordered collection (also known as a sequence) that allows duplicate elements.
+
+ Key Points about List:
+Maintains insertion order.
+Allows duplicates.
+Supports index-based access.
+Can contain null values (depending on implementation).

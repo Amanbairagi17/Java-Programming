@@ -1,0 +1,7 @@
+package ScenarioBasesd;
+
+public class WebBrowser {
+    public static void main(String[] args) {
+        
+    }
+}
